@@ -1,4 +1,4 @@
-export default function Hero() {
+export default function SectionHero() {
   return (
     <main className="max-w-screen-lg mx-auto py-20 text-center max-md:px-5 space-y-3">
       <h1
