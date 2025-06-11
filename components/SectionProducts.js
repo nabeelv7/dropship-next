@@ -27,7 +27,7 @@ export default function SectionProducts() {
 
   return (
     <section className="max-w-screen-lg mx-auto py-16 space-y-8" id="products">
-      <div className="text-center space-y-2">
+      <div className="text-center space-y-2 px-5 text-balance">
         <h1 className="uppercase text-primary text-sm tracking-widest">
           Our Chairs
         </h1>
