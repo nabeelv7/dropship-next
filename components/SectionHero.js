@@ -6,7 +6,7 @@ export default function SectionHero() {
         style={{ lineHeight: 1, letterSpacing: -0.4 }}
       >
         Feel Like{" "}
-        <span className="underline decoration-dashed decoration-primary underline-offset-8">
+        <span className="underline decoration-dashed decoration-primary md:underline-offset-8">
           Yourself
         </span>{" "}
         Again — <br />
