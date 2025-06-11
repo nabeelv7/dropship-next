@@ -1,10 +1,8 @@
-import { storeconfig } from "@/storeconfig";
-
 export default function ButtonFacebook() {
   return (
     <>
       <a
-        href={storeconfig.store.facebook_link}
+        href="https://facebook.com/"
         target="_blank"
         aria-label="Contact us on Facebook"
         className="btn bg-[#1A77F2] text-white border-[#005fd8]"

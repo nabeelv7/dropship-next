@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${dmSans.className} antialiased bg-base-300`}>
+      <body className={`${dmSans.className} antialiased bg-base-100`}>
         <Navbar />
         {children}
       </body>

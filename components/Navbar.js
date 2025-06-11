@@ -1,14 +1,10 @@
 "use client";
-
-import { storeconfig } from "@/storeconfig";
 import ButtonFacebook from "./ButtonFacebook";
 
 export default function Navbar() {
-  const { store } = storeconfig;
-
   return (
     <nav
-      className="navbar bg-base-300 max-w-screen-lg mx-auto"
+      className="navbar bg-base-100 max-w-screen-lg mx-auto"
       aria-label="Main navigation"
     >
       <div className="navbar-start">
@@ -68,9 +64,9 @@ export default function Navbar() {
         <a
           href="/"
           className="font-bold text-xl"
-          aria-label={`Go to homepage for ${store?.name || "our store"}`}
+          aria-label={`Go to homepage for our store`}
         >
-          {store?.name || "My Store"}
+          ThandaBox
         </a>
       </div>
 
