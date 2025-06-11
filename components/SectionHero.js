@@ -17,7 +17,7 @@ export default function SectionHero() {
         melt away tension, ease chronic pain, and bring your body back to
         balance.
       </p>
-      <a href="#products" className="btn btn-primary btn-lg mt-3 threeD">
+      <a href="#products" className="btn btn-primary btn-lg mt-3 THREED">
         Shop Massage Chairs
       </a>
     </main>
