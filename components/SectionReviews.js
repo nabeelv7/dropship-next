@@ -91,8 +91,8 @@ export function ReviewCard({ review, author, pfp }) {
           <h3 className="font-semibold">{author}</h3>
           <div className="flex gap-[0.9]">
             {[...Array(5)].map((_, i) => (
-              <div className="bg-[#00b67a]">
-                <Star key={i} color="white" width="20" height="20" />
+              <div key={i} className="bg-[#00b67a]">
+                <Star color="white" width="20" height="20" />
               </div>
             ))}
           </div>
