@@ -5,6 +5,7 @@ import SectionFooter from "@/components/SectionFooter";
 import SectionHero from "@/components/SectionHero";
 import SectionProducts from "@/components/SectionProducts";
 import SectionReviews from "@/components/SectionReviews";
+import Script from "next/script";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <SectionFAQ />
       <SectionCTA />
       <SectionFooter />
+      <Script src="/analytics-script.js" strategy="afterInteractive" />
     </>
   );
 }

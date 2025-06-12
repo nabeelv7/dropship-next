@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { signOut } from "next-auth/react";
+import Image from "next/image";
 
 export default function AuthNavbar({ pfp, email, username }) {
   return (
@@ -17,7 +18,12 @@ export default function AuthNavbar({ pfp, email, username }) {
             className="btn btn-ghost btn-circle avatar"
           >
             <div className="w-10 rounded-full">
-              <img alt="Tailwind CSS Navbar component" src={pfp} />
+              <Image
+                width={50}
+                height={50}
+                alt="Tailwind CSS Navbar component"
+                src={pfp}
+              />
             </div>
           </div>
           <ul
