@@ -19,3 +19,9 @@ export default function Home() {
     </>
   );
 }
+
+export const metadata = {
+  title: "RestNest",
+  description:
+    " Experience daily relief with our luxury massage chairs — engineered to melt away tension, ease chronic pain, and bring your body back to balance.",
+};
