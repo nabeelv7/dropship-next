@@ -1,9 +1,11 @@
+import Image from "next/image";
+
 export default function SectionCTA() {
   const avatars = [
-    "https://img.daisyui.com/images/profile/demo/batperson@192.webp",
-    "https://img.daisyui.com/images/profile/demo/spiderperson@192.webp",
-    "https://img.daisyui.com/images/profile/demo/averagebulk@192.webp",
-    "https://img.daisyui.com/images/profile/demo/wonderperson@192.webp",
+    "/images/avatars/1.webp",
+    "/images/avatars/2.webp",
+    "/images/avatars/3.webp",
+    "/images/avatars/4.webp",
   ];
 
   return (
@@ -16,7 +18,7 @@ export default function SectionCTA() {
           Targeted relief, right from your massage chair.
         </h2>
 
-        <button className="btn btn-primary btn-xl btn-wide THREED"> 
+        <button className="btn btn-primary btn-xl btn-wide THREED">
           Try it Today &rarr;
         </button>
 
@@ -30,7 +32,12 @@ export default function SectionCTA() {
             {avatars.map((url, index) => (
               <div className="avatar" key={index}>
                 <div className="w-12">
-                  <img src={url} alt={`User ${index + 1}`} />
+                  <Image
+                    width={100}
+                    height={100}
+                    src={url}
+                    alt={`User ${index + 1}`}
+                  />
                 </div>
               </div>
             ))}

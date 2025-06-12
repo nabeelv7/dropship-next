@@ -71,7 +71,7 @@ export default function Navbar() {
           className="font-bold text-xl"
           aria-label={`Go to homepage for our store`}
         >
-          ThandaBox
+          RestNest
         </a>
       </div>
 

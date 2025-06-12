@@ -1,3 +1,5 @@
+"use client";
+
 export default function SectionDemoVideo() {
   return (
     <div className="relative w-full max-w-3xl mx-auto">
