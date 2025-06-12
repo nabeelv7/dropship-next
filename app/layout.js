@@ -3,7 +3,6 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 const dmSans = DM_Sans({
-  display: "swap",
   subsets: ["latin"],
 });
 
