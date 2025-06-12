@@ -8,12 +8,12 @@ importers:
 
   .:
     dependencies:
-      '@auth/drizzle-adapter':
-        specifier: ^1.9.1
-        version: 1.9.1
       '@libsql/client':
         specifier: ^0.15.9
         version: 0.15.9
+      drizzle-kit:
+        specifier: ^0.31.1
+        version: 0.31.1
       drizzle-orm:
         specifier: ^0.44.2
         version: 0.44.2(@libsql/client@0.15.9)
@@ -39,9 +39,6 @@ importers:
       daisyui:
         specifier: ^5.0.43
         version: 5.0.43
-      drizzle-kit:
-        specifier: ^0.31.1
-        version: 0.31.1
       tailwindcss:
         specifier: ^4
         version: 4.1.8
@@ -69,9 +66,6 @@ packages:
         optional: true
       nodemailer:
         optional: true
-
-  '@auth/drizzle-adapter@1.9.1':
-    resolution: {integrity: sha512-WQ4vtDxpo3jAPfSLJbrjFx++/lMO1HJbV7ZwzCUBEkhqYMTrqQBJhLb+vcusDu95wiekVOUCPe1y6QSNbMeeYA==}
 
   '@drizzle-team/brocli@0.10.2':
     resolution: {integrity: sha512-z33Il7l5dKjUgGULTqBsQBQwckHh5AbIuxhdsIxDDiZAzBOrZO6q9ogcWC65kU382AfynTfgNumVcNIjuIua6w==}
@@ -1229,14 +1223,6 @@ snapshots:
       oauth4webapi: 3.5.2
       preact: 10.24.3
       preact-render-to-string: 6.5.11(preact@10.24.3)
-
-  '@auth/drizzle-adapter@1.9.1':
-    dependencies:
-      '@auth/core': 0.39.1
-    transitivePeerDependencies:
-      - '@simplewebauthn/browser'
-      - '@simplewebauthn/server'
-      - nodemailer
 
   '@drizzle-team/brocli@0.10.2': {}
 
