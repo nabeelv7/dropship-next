@@ -1,5 +1,6 @@
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import AuthNavbar from "@/components/AuthNavbar";
 import Header from "@/components/Header";
@@ -18,6 +19,7 @@ export default async function RootLayout({ children }) {
     <html lang="en">
       <body className={`${dmSans.className} antialiased bg-base-100`}>
         <Header />;{children}
+        <Script src="/analytics-script.js" strategy="afterInteractive" />
       </body>
     </html>
   );

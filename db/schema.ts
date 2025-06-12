@@ -3,6 +3,7 @@ import {
   sqliteTable,
   text,
   primaryKey,
+  real,
 } from "drizzle-orm/sqlite-core";
 import type { AdapterAccountType } from "next-auth/adapters";
 
@@ -84,3 +85,18 @@ export const authenticators = sqliteTable(
     }),
   })
 );
+
+// db schema
+export const visits = sqliteTable("visits", {
+  id: integer("id").primaryKey({ autoIncrement: true }),
+  ip: text("ip").notNull(),
+  city: text("city"),
+  country: text("country"),
+  continent: text("continent"),
+  latitude: real("latitude"),
+  longitude: real("longitude"),
+  referrer: text("referrer"),
+  browser: text("browser"),
+  os: text("os"),
+  timestamp: text("timestamp").notNull(), // stored as ISO string
+});

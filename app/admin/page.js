@@ -1,6 +1,6 @@
 import { auth } from "@/auth";
 import { redirect } from "next/navigation";
-// import ButtonSignIn from "@/components/ButtonSignIn";
+import ClientWrapperDashboard from "@/components/ClientWrapperDashboard";
 
 export default async function Admin() {
   const session = await auth();
@@ -23,10 +23,5 @@ export default async function Admin() {
     );
   }
 
-  return (
-    <>
-      <h1>he</h1>
-      <h1>he</h1>
-    </>
-  );
+  return <ClientWrapperDashboard />;
 }

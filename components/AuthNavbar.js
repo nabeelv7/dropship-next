@@ -6,7 +6,7 @@ export default function AuthNavbar({ pfp, email, username }) {
     <div className="navbar bg-base-100 max-w-screen-lg mx-auto">
       <div className="flex-1">
         <Link href="/" className="btn btn-ghost text-xl">
-          daisUI
+          RestNest
         </Link>
       </div>
       <div className="flex-none">

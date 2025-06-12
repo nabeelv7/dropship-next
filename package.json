@@ -20,11 +20,14 @@
     "next-auth": "5.0.0-beta.28",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-player": "^2.16.0"
+    "react-player": "^2.16.0",
+    "recharts": "^2.15.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/react": "19.1.8",
     "daisyui": "^5.0.43",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "typescript": "5.8.3"
   }
 }
