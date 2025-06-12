@@ -41,7 +41,7 @@ export default function SectionReviews() {
   ];
 
   return (
-    <section className="max-w-screen-lg mx-auto">
+    <section className="max-w-screen-lg mx-auto md:pb-20 pb-10">
       <SectionReviewsIntro />
       <div className="grid md:grid-cols-3 gap-6 px-5">
         {reviews.map((review) => (
@@ -82,11 +82,11 @@ export function ReviewCard({ review, author, pfp }) {
   return (
     <div className="bg-base-100 shadow-md rounded-xl p-5 space-y-4 text-left">
       <div className="flex items-center gap-3">
-        <img
+        {/* <img
           src={pfp}
           alt={author}
           className="w-12 h-12 rounded-full object-cover"
-        />
+        /> */}
         <div>
           <h3 className="font-semibold">{author}</h3>
           <div className="flex gap-[0.9]">

@@ -1,12 +1,14 @@
 import Link from "next/link";
+import Image from "next/image";
+import MassageChair from "@/public/images/massage-chair.webp";
 
 export default function CardProduct() {
   return (
     <div className="card bg-base-100 shadow-sm">
       <figure>
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes"
+        <Image
+          src={MassageChair}
+          alt="an picture showing the product, which is a massage chair"
         />
       </figure>
       <div className="card-body">
