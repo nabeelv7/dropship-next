@@ -1,8 +1,7 @@
 import { auth } from "@/auth";
 import { redirect } from "next/navigation";
-import ClientWrapperDashboard from "@/components/ClientWrapperDashboard";
 
-export default async function Admin() {
+export default async function AnalyticsPage() {
   const session = await auth();
   // Redirect if not signed in
   if (!session?.user) {
@@ -23,5 +22,9 @@ export default async function Admin() {
     );
   }
 
-  return <>bruh</>;
+  return(
+    <section className="max-w-screen-lg mx-auto bg-red-500">
+      <h1>hello</h1>
+    </section>
+  );
 }

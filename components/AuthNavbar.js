@@ -38,7 +38,7 @@ export default function AuthNavbar({ pfp, email, username }) {
             </li>
             <li className="space-y-1">
               <div className="divider"></div>
-              <Link href="/admin" className="btn btn-info btn-wide">
+              <Link href="/admin/analytics" className="btn btn-info btn-wide">
                 Admin
               </Link>
               <button onClick={signOut} className="btn btn-error btn-wide">
