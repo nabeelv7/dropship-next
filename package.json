@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth/drizzle-adapter": "^1.9.1",
     "@libsql/client": "^0.15.9",
     "drizzle-orm": "^0.44.2",
     "next": "15.3.3",
