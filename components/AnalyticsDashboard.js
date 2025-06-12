@@ -80,16 +80,16 @@ export default function AnalyticsDashboard() {
       </div>
 
       {/* Views Bar Chart */}
-      <div className="card bg-base-100 shadow-md p-6">
-        <h2 className="text-xl font-semibold mb-4 text-base-content">
-          Views Over Time
+      <div className="card bg-base-100 border border-base-300 p-6">
+        <h2 className="text-xl font-semibold ml-5 mb-5 text-base-content">
+          📊 Views Over Time
         </h2>
         <ResponsiveContainer width="100%" height={dynamicHeight}>
           <BarChart
             data={viewsData}
             margin={{ left: 0, right: 20 }}
-            barCategoryGap="20%" // space between bar categories
-            barGap={4} // space between bars in same category (if multiple bars)
+            barCategoryGap="20%"
+            barGap={4}
           >
             <XAxis
               dataKey="label"
@@ -98,7 +98,7 @@ export default function AnalyticsDashboard() {
               axisLine={false}
               tickLine={false}
               interval="preserveStartEnd"
-              type="category" // important for proper spacing
+              type="category"
             />
             <YAxis
               tick={{ fontSize: 13, fill: "#6b7280" }}
@@ -111,15 +111,13 @@ export default function AnalyticsDashboard() {
             <Tooltip
               formatter={(value) => [value, "Views"]}
               contentStyle={{ borderRadius: 8, border: "none" }}
-              cursor={false} // disable default cursor overlay
-              trigger="mousemove" // show tooltip only on mouse move over bars
+              cursor={{ fill: "transparent" }} // disables gray hover background
             />
             <Bar
               dataKey="count"
               fill="rgb(88, 80, 236)"
               barSize={30}
               radius={[4, 4, 0, 0]}
-              cursor={false} // disable gray highlight on hover
             />
           </BarChart>
         </ResponsiveContainer>
