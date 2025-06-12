@@ -41,7 +41,7 @@ export default function SectionReviews() {
   ];
 
   return (
-    <section className="max-w-screen-lg mx-auto md:pb-20 pb-10">
+    <section className="max-w-screen-lg mx-auto md:pb-20 pb-10" id="reviews">
       <SectionReviewsIntro />
       <div className="grid md:grid-cols-3 gap-6 px-5">
         {reviews.map((review) => (

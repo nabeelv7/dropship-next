@@ -2,7 +2,7 @@ import SectionDemoVideo from "./SectionDemoVideo";
 
 export default function SectionDemo() {
   return (
-    <section className="max-w-screen-lg mx-auto md:pb-20 pb-10">
+    <section id="demo" className="max-w-screen-lg mx-auto md:pb-20 pb-10">
       <SectionDemoIntro />
       <SectionDemoVideo />
     </section>

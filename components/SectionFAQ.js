@@ -22,7 +22,7 @@ export default function SectionFAQ() {
     },
   ];
   return (
-    <section className="max-w-screen-lg mx-auto grid md:grid-cols-2 pt-10 pb-20 gap-5 px-5">
+    <section id="faq" className="max-w-screen-lg mx-auto grid md:grid-cols-2 pt-10 pb-20 gap-5 px-5">
       <SectionFAQIntro />
       <div className="flex flex-col gap-2 max-w-xl text-lg mx-auto">
         {faqs.map((faq) => (

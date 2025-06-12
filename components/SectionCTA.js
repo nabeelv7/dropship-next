@@ -13,10 +13,10 @@ export default function SectionCTA() {
           Turn Aches Into Ease
         </h1>
         <h2 className="text-base-content/80">
-          Targeted relief, right from your massage chair.{" "}
+          Targeted relief, right from your massage chair.
         </h2>
 
-        <button className="btn btn-primary btn-wide shadow-md">
+        <button className="btn btn-primary btn-xl btn-wide THREED"> 
           Try it Today &rarr;
         </button>
 

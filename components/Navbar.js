@@ -46,8 +46,13 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a href="#testimonials" role="menuitem">
-                Testimonials
+              <a href="#reviews" role="menuitem">
+                Reviews
+              </a>
+            </li>
+            <li>
+              <a href="#demo" role="menuitem">
+                Demo
               </a>
             </li>
             <li>
@@ -76,7 +81,10 @@ export default function Navbar() {
             <a href="#products">Products</a>
           </li>
           <li>
-            <a href="#testimonials">Testimonials</a>
+            <a href="#reviews">Reviews</a>
+          </li>
+          <li>
+            <a href="#demo">Demo</a>
           </li>
           <li>
             <a href="#faq">FAQ</a>
